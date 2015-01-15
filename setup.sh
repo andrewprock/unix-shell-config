@@ -9,3 +9,5 @@ ln -s ~/git/unix-shell/config/inputrc ~/.inputrc
 
 ln -s ~/git/unix-shell/config/vimrc .vimrc
 
+
+brew install source-highlight
