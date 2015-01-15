@@ -1,0 +1,24 @@
+# This file tracks the configuration needed to run android studio.
+# It should be sourced from .bashrc, or .bash_profile
+
+# set up android variables
+# express root in generic path terms
+export ANDROID_SDK=$ANDROID_ROOT/android-studio/sdk
+export ANDROID_HOME=C:/$ANDROID_SDK
+export ANDROID_CMAKE=/cygdrive/c/$ANDROID_ROOT/android-cmake-7e4cd91276af
+
+# one version for windows
+export PATH=$PATH:"C:/$ANDROID_SDK/tools"
+export PATH=$PATH:"C:/$ANDROID_SDK/platform-tools"
+export PATH=$PATH:"C:/$ANDROID_ROOT/apache-ant-1.9.2/bin"
+export PATH=$PATH:"C:/$ANDROID_ROOT/gradle-1.10/bin"
+
+# one for cygwin
+export PATH=$PATH:"/cygdrive/c/$ANDROID_SDK/tools"
+export PATH=$PATH:"/cygdrive/c/$ANDROID_SDK/platform-tools"
+export PATH=$PATH:"/cygdrive/c/$ANDROID_ROOT/apache-ant-1.9.2/bin"
+export PATH=$PATH:"/cygdrive/c/$ANDROID_ROOT/gradle-1.10/bin"
+export PATH=$PATH:"/cygdrive/c/$ANDROID_ROOT/android-ndk-r9/"
+
+export ANDROID_NDK_TOOLCHAIN_ROOT=/cygdrive/c/Users/aprock/Android/standalone-toolchain
+export PATH=$PATH:"ANDROID_NDK_TOOLCHAIN_ROOT/bin"
